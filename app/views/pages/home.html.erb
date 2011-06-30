@@ -1,0 +1,61 @@
+<%= render 'shared/header' %>
+	<table class="welcome round">
+		<tr>
+			<td>
+				<p><b>Technology by Design</b>, a local IT firm based in
+					Billings, MT, has a built a reputation on reliable, 
+					customer-focused service.  As a part of that service,
+					we offer a wide variety of ways for our clients to get 
+					IT help.  Our online support application is a convenient
+					way for our clients to get the help they need in a 
+					quick and concise manner. <p> If you would like more
+					information about <b>Technology by Design</b> please
+					visit our website at <%= link_to "techbydsn.com",
+					"www.techbydsn.com" %>.</p>
+				<h2>Follow our two easy steps for online support</h2>
+				<%= image_tag("right_arrow.png") %>
+			</td>
+			<td>
+				<h2>First step</h2>
+					<p>Sign up or sign in:</p>
+						<ul>
+							<li>If you are a first time visitor, please
+								<%= link_to "sign up", "#" %></li>
+							<li>If you are a returning client, please 
+								<%= link_to "sign in", "#" %></li>
+						</ul>
+					<p>If you would rather not sign up now, please use our 
+						guest account:<p>
+						<ul>
+							<li><%= link_to "Guest Account", "#" %></li>
+						</ul>
+			</td>
+			<td>
+				<h2>Second step</h2>
+					<p>Tell us your problem:</p>
+						<ul>
+							<li>Create an event through our online system</li>
+							<li>Tell us the best time and most convenient way
+								to contact you</li>
+							<li>The event details and contact information will 			  
+								automatically be emailed to one of our 
+								technicians</li>
+							<li>Our competent technicians will figure out
+								the best solution for your technical
+								problem</li>
+							<li>We will contact you through the approved method</li>
+						</ul>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<h1><%= link_to "About Us", "#" %></h1>
+			</td>
+			<td>
+				<h1><%= link_to "Location", "#" %></h1>
+			</td>
+			<td>
+				<h1><%= link_to "Service Info", "#" %></h1>
+			</td>
+		</tr>
+	</table>

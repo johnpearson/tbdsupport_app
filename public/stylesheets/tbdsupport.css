@@ -1,0 +1,95 @@
+
+/* General Styling */
+
+a {
+	color: #2F4F4F;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:visited {
+	color: gray;
+}
+
+h1 {
+	font-size: 150%;
+}
+
+h2 {
+	font-size: 120%;
+}
+
+
+/* Header */
+
+div.hlinks {
+	margin-left: 875px;
+	position: absolute;
+}
+
+div.hlinks ul li {
+	list-style: none;
+	display: inline;
+	padding: 8px;
+}
+
+table.header {
+	margin-top: 10px;
+	margin-left: 100px;
+}
+
+table.header tr td {
+	padding: 15px;
+}
+/* Welcome Page */
+
+table.welcome {
+	padding: 5px;
+	width: 80%;
+	height: 550px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+table.welcome tr td {
+	width: 33%;
+	vertical-align: top;
+	padding: 8px;
+	border: thin dotted black;
+}
+
+table.welcome tr td img {
+	padding-left: 200px;
+	position: absolute;
+}
+
+table.welcome p {
+	margin-left: 10px;
+}
+
+table.welcome h1 {
+	padding-top: 15px;
+	text-align: center;
+	vertical-align: middle;
+}
+
+
+
+/* Footer */
+
+div.footer {
+	padding: 2px;
+	margin-bottom: 2em;
+	text-align: center;
+}
+
+/* Round corners */
+
+.round {
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+}
