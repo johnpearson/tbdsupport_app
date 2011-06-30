@@ -6,4 +6,8 @@ class User < ActiveRecord::Base
 
   # Setup accessible (or protected) attributes for your model
   attr_accessible :email, :password, :password_confirmation, :remember_me
+  
+  # Users have many events that are associated with them
+  has_many :events, :dependent => :destroy
+
 end
