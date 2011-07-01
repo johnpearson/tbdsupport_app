@@ -3,8 +3,7 @@
 /* General Styling */
 
 body {
-	min-width: 980px;
-	background-image: url('background.png'); 
+	min-width: 1270px;
 	font-family: Arial, Verdana, sans-serif;
 	font-size: 100%;
 }
@@ -33,25 +32,25 @@ h2 {
 
 /* Header */
 
-div.hlinks {
-	margin-left: 875px;
-	position: absolute;
-}
-
-div.hlinks ul li {
-	list-style: none;
-	display: inline;
-	padding: 8px;
+header {
+	min-width: 1270px;
 }
 
 table.header {
-	margin-top: 8px;
-	margin-left: 80px;
+	margin-left: 65px;
 }
 
 table.header tr td {
 	padding: 15px;
 }
+
+table.header ul li {
+	font-size: 110%;
+	list-style: none;
+	display: inline;
+	padding: 8px;
+}
+
 /* Welcome Page */
 
 table.welcome {
@@ -72,8 +71,7 @@ table.welcome tr td {
 }
 
 table.welcome tr td img {
-	padding-top: 10px;
-	padding-left: 210px;
+	padding-left: 260px;
 	position: absolute;
 }
 
