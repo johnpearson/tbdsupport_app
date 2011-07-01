@@ -3,7 +3,7 @@
 /* General Styling */
 
 body {
-	min-width: 1270px;
+	min-width: 1250px;
 	font-family: Arial, Verdana, sans-serif;
 	font-size: 100%;
 }
@@ -18,7 +18,7 @@ a:hover {
 }
 
 a:visited {
-	color: gray;
+	color: #4169E1;
 }
 
 h1 {
@@ -33,7 +33,7 @@ h2 {
 /* Header */
 
 header {
-	min-width: 1270px;
+	min-width: 1250px;
 }
 
 table.header {
@@ -45,7 +45,6 @@ table.header tr td {
 }
 
 table.header ul li {
-	font-size: 110%;
 	list-style: none;
 	display: inline;
 	padding: 8px;
@@ -59,18 +58,21 @@ table.welcome {
 	height: 550px;
 	margin-right: auto;
 	margin-left: auto;
-	border-collapse: collapse; 
+	border: medium solid gray; 
+	background-image: url('table_background.png');
+	border-collapse: collapse;
 }
 
 table.welcome tr td {
 	width: 33%;
 	vertical-align: top;
 	padding: 8px;
-	border: medium dotted gray;
+	border-right: medium solid gray;
 	
 }
 
 table.welcome tr td img {
+	margin-top: 10px;
 	padding-left: 260px;
 	position: absolute;
 }
