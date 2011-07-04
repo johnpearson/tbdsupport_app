@@ -9,7 +9,7 @@ body {
 }
 
 a {
-	color: #4169E1;
+	color: #4169E1; 
 	text-decoration: none;
 }
 
@@ -18,7 +18,7 @@ a:hover {
 }
 
 a:visited {
-	color: #4169E1;
+	color: #4169E1; 
 }
 
 h1 {
@@ -37,11 +37,11 @@ header {
 }
 
 table.header {
-	margin-left: 65px;
+	margin-left: 50px;
 }
 
 table.header tr td {
-	padding: 15px;
+	padding: 10px;
 }
 
 table.header ul li {
