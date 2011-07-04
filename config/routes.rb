@@ -6,6 +6,8 @@ TbdsupportApp::Application.routes.draw do
   
   resources :events
   resources :user
+  
+  match '/about' => 'pages#about'
 
   root :to => 'pages#home'
 end

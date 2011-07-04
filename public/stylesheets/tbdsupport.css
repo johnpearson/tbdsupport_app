@@ -41,7 +41,7 @@ table.header {
 }
 
 table.header tr td {
-	padding: 10px;
+	padding: 8px;
 }
 
 table.header ul li {
@@ -92,6 +92,50 @@ table.welcome h1 {
 }
 
 table.welcome h2 {
+	margin-left: 10px;
+}
+
+/* About Page */
+
+table.about {
+	padding: 2px;
+	width: 90%;
+	height: 550px;
+	margin-right: auto;
+	margin-left: auto;
+	border: medium solid gray; 
+	background-image: url('table_background.png');
+	border-collapse: collapse;
+}
+
+table.about tr td {
+	width: 33%;
+	vertical-align: top;
+	padding: 8px;
+	border-right: medium solid gray;
+	
+}
+
+table.about tr td img {
+	margin-top: 15px;
+	padding-left: 60px;
+}
+
+table.about ul li {
+	padding: 5px;
+}
+
+table.about p {
+	margin-left: 10px;
+}
+
+table.about h1 {
+	padding-top: 15px;
+	text-align: center;
+	vertical-align: middle;
+}
+
+table.about h2 {
 	margin-left: 10px;
 }
 
