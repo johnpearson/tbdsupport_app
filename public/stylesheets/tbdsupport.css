@@ -86,9 +86,8 @@ table.welcome p {
 }
 
 table.welcome h1 {
-	padding-top: 15px;
+	padding-top: 10px;
 	text-align: center;
-	vertical-align: middle;
 }
 
 table.welcome h2 {
@@ -130,9 +129,8 @@ table.about p {
 }
 
 table.about h1 {
-	padding-top: 15px;
+	padding-top: 10px;
 	text-align: center;
-	vertical-align: middle;
 }
 
 table.about h2 {

@@ -1,0 +1,35 @@
+<%= render 'shared/header' %>
+	<%= render 'shared/first_column' %>
+		<td>
+			<h2>First step</h2>
+				<p>Sign up or sign in:</p>
+					<ul>
+						<li>If you are a first time visitor, please
+						<%= link_to "sign up", new_user_registration_path %></li>
+						<li>If you are a returning client, please 
+							<%= link_to "sign in", new_user_session_path %></li>
+					</ul>
+				<p>If you would rather not sign up now, please use our 
+					guest account:<p>
+					<ul>
+						<li><%= link_to "Guest Account", "#" %></li>
+					</ul>
+				<p>If you have questions or would rather talk to a
+					technician directly please call <b>(406)839-9968</b>.</p>
+		</td>
+		<td>
+			<h2>Our Services and Rates</h2>
+			<p>We offer our clients a wide variety of services at competitive rates.
+				Our services include, but are not limited to:
+				<ul>
+					<li>Virus removal and clean up</li>
+					<li>Networking for small to medium-sized businesses</li>
+					<li>Server installation, maintenance, and repair</li>
+					<li>Home networking</li>
+					<li>New computer consultations and set up</li>
+					<li>E-mail hosting</li>
+					<li>Website design and hosting</li>
+				</ul>
+			<p>Our rates are $85/hr and are based on the quarter hour.</p>
+		</td>
+	<%= render 'shared/second_row' %>

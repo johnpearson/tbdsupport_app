@@ -1,0 +1,28 @@
+<%= render 'shared/header' %>
+	<%= render 'shared/first_column' %>
+		<td>
+			<h2>First step</h2>
+				<p>Sign up or sign in:</p>
+					<ul>
+						<li>If you are a first time visitor, please
+						<%= link_to "sign up", new_user_registration_path %></li>
+						<li>If you are a returning client, please 
+							<%= link_to "sign in", new_user_session_path %></li>
+					</ul>
+				<p>If you would rather not sign up now, please use our 
+					guest account:<p>
+					<ul>
+						<li><%= link_to "Guest Account", "#" %></li>
+					</ul>
+				<p>If you have questions or would rather talk to a
+					technician directly please call <b>(406)839-9968</b>.</p>
+		</td>
+		<td>
+			<p><b>Technology by Design Contact Info:</b></p>
+			<p><b>Phone: </b>(406)839-9968</p>
+			<p><b>Hours: </b>Monday - Friday 8am to 5pm MST</p>
+			<p><b>Website: </b>
+				<%= link_to "www.techbydsn.com", "www.techbydsn.com" %></p>
+			<p><b>Email: </b>info@techbydsn.com</p>
+		</td>
+	<%= render 'shared/second_row' %>
