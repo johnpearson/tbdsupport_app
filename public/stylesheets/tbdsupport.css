@@ -9,7 +9,7 @@ body {
 }
 
 a {
-	color: #4169E1; 
+	color: #8B4513; 
 	text-decoration: none;
 }
 
@@ -18,7 +18,7 @@ a:hover {
 }
 
 a:visited {
-	color: #4169E1; 
+	color: #8B4513; 
 }
 
 h1 {
@@ -30,7 +30,7 @@ h2 {
 }
 
 
-/* Header */
+/* Home Page Header */
 
 header {
 	min-width: 1250px;
@@ -50,6 +50,23 @@ table.header ul li {
 	padding: 8px;
 }
 
+/* User Header */
+
+table.user_header {
+	margin-left: 50px;
+}
+
+table.user_header tr td {
+	padding: 8px;
+	margin-right: 150px;
+}
+
+table.user_header ul li {
+	list-style: none;
+	display: inline;
+	padding: 8px;
+}
+
 /* Welcome Page */
 
 table.welcome {
@@ -58,17 +75,13 @@ table.welcome {
 	height: 550px;
 	margin-right: auto;
 	margin-left: auto;
-	border: medium solid gray; 
-	background-image: url('table_background.png');
-	border-collapse: collapse;
+	background-image: url('table_background3.png');
 }
 
 table.welcome tr td {
 	width: 33%;
 	vertical-align: top;
 	padding: 8px;
-	border-right: medium solid gray;
-	
 }
 
 table.welcome tr td img {
@@ -85,11 +98,6 @@ table.welcome p {
 	margin-left: 10px;
 }
 
-table.welcome h1 {
-	padding-top: 10px;
-	text-align: center;
-}
-
 table.welcome h2 {
 	margin-left: 10px;
 }
@@ -101,22 +109,18 @@ table.about {
 	width: 90%;
 	height: 550px;
 	margin-right: auto;
-	margin-left: auto;
-	border: medium solid gray; 
-	background-image: url('table_background.png');
-	border-collapse: collapse;
+	margin-left: auto; 
+	background-image: url('table_background3.png');
 }
 
 table.about tr td {
 	width: 33%;
 	vertical-align: top;
 	padding: 8px;
-	border-right: medium solid gray;
-	
 }
 
 table.about tr td img {
-	margin-top: 15px;
+	margin-top: 10px;
 	padding-left: 60px;
 }
 
@@ -128,13 +132,24 @@ table.about p {
 	margin-left: 10px;
 }
 
-table.about h1 {
-	padding-top: 10px;
-	text-align: center;
-}
-
 table.about h2 {
 	margin-left: 10px;
+}
+
+/* Bottom Links */
+
+div.links {
+	padding: 2px;
+	width: 27%;
+	margin-left: auto;
+	margin-right: auto;
+	border-bottom: thin solid #8B4513;
+}
+
+div.links ul li {
+	list-style: none;
+	display: inline;
+	padding: 8px;
 }
 
 /* Footer */

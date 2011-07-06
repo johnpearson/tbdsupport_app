@@ -9,11 +9,16 @@
 			</td>
 			<td>
 				<ul>
+					<% if user_signed_in? %>
+					<li><%= link_to "User Profile", '/user' %>
+					<li><%= link_to "Sign Out", destroy_user_session_path,
+									:method => :delete %>
+					<% else %>	
 					<li><%= link_to "Home", root_path %></li>
 					<li><%= link_to "Sign in", new_user_session_path %></li>
 					<li><%= link_to "Sign up", new_user_registration_path %></li>
+					<% end %>
 					<li><%= link_to "Contact Us", "/contact" %></li>
-					<li><%= link_to "Sign Out", destroy_user_session_path %></li>
 				</ul>
 			</td>
 		</tr>

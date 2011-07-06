@@ -3,7 +3,7 @@ class UsersController < ApplicationController
   
   #The show page is the user home page after a successful login
   def show
-    @user = User.find(params[:id])
+    @user = current_user
     @title = @user.email
   end
 end

@@ -6,6 +6,10 @@ TbdsupportApp::Application.routes.draw do
   resources :events
   resources :users
   
+  namespace :user do
+    root :to => "users#show"
+  end
+  
   match '/about' => 'pages#about'
   match '/location' => 'pages#location'
   match '/service' => 'pages#service'
