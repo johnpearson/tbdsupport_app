@@ -1,11 +1,10 @@
 TbdsupportApp::Application.routes.draw do
-  get "pages/home"
 
   devise_for :technicians
   devise_for :users 
   
   resources :events
-  resources :user
+  resources :users
   
   match '/about' => 'pages#about'
   match '/location' => 'pages#location'
