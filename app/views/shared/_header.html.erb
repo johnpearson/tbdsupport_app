@@ -5,7 +5,11 @@
 				<%= image_tag('LOGO_small.jpg', :alt => 'logo') %>
 			</td>
 			<td>
+				<% if user_signed_in? %>
+				<h1>Welcome, <%= current_user.name %></h1>
+				<% else %>
 				<h1>Welcome to Technology by Design Online Support!</h1>
+				<% end %>
 			</td>
 			<td>
 				<ul>
