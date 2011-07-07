@@ -71,7 +71,7 @@ table.user_header ul li {
 
 table.welcome {
 	padding: 2px;
-	width: 90%;
+	width: 91%;
 	height: 550px;
 	margin-right: auto;
 	margin-left: auto;
@@ -136,6 +136,66 @@ table.about h2 {
 	margin-left: 10px;
 }
 
+/* User Profile Page */
+
+table.profile {
+	padding: 2px;
+	width: 91%;
+	height: 550px;
+	margin-right: auto;
+	margin-left: auto;
+	background-image: url('table_background2.png');
+}
+
+table.profile tr td {
+	width: 33%;
+	vertical-align: top;
+	padding: 8px;
+}
+
+table.profile tr td img {
+	margin-top: 10px;
+	padding-left: 300px;
+	position: absolute;
+}
+
+table.profile ul li {
+	padding: 5px;
+	list-style: none;
+}
+
+table.profile p {
+	margin-left: 10px;
+}
+
+table.profile h2 {
+	margin-left: 10px;
+}
+
+/* Edit User Page */
+
+div.edit_user {
+	width: 91%;
+	height: 550px;
+	padding: 2px;
+	margin-right: auto;
+	margin-left: auto;
+	background-image: url('table_background2.png');
+}
+
+div.edit_user h2 {
+	padding-top: 8px;
+	padding-left: 20px;
+}
+
+div.edit_user p {
+	padding-left: 35px;
+}
+
+div.edit_user a {
+	padding-left: 5px;
+}
+
 /* Bottom Links */
 
 div.links {
@@ -150,6 +210,12 @@ div.links ul li {
 	list-style: none;
 	display: inline;
 	padding: 8px;
+}
+
+/* Gravatar Styling */
+
+div.gravatar img {
+	vertical-align: top;
 }
 
 /* Footer */

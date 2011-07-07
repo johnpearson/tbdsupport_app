@@ -1,17 +1,28 @@
 <%= render 'shared/user_header' %>
-	<table class="welcome round">
+	<table class="profile round">
 		<tr>
 			<td>
+				<div class="gravatar"><%= gravatar_for @user, :size => 75 %></div>
 				<h2>User Profile:</h2>
 					<ul>
-						<li>Name: </li>
-						<li>Email: <%= current_user.email %></li>
-			</td>
-			<td>
-				<h2>Create New Event:</h2>
+						<li><b>Name:</b></li>
+						<li><b>Email:</b> <%= current_user.email %></li>
+						<li><b>Last Signed In:</b> 
+						<%= (@user.last_sign_in_at.to_formatted_s(
+						:long_ordinal)).gsub! /\d\d\:\d\d/, '' %></b>
+						<li><b>Last Event:</b></li>
+						<li><b>Computers:</b></li>
+						<li><b>Other devices:</b></li>
+						<li><b>Company Name:</b></li>
+					</ul>
 			</td>
 			<td>
 				<h2>Check Status of Past Events:</h2>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<h2>Notifications and Notes:</h2>
 			</td>
 		</tr>
 	</table>
