@@ -14,7 +14,8 @@
 						<li><b>Computers:</b>  <%= current_user.computers %></li>
 						<li><b>Other devices:</b>  <%= current_user.devices %></li>
 						<li><b>Company Name:</b>  <%= current_user.company %></li>
-					</ul>
+					</ul><br />
+				<h3><%= link_to "Create New Event", new_event_path %></h3>
 			</td>
 			<td>
 				<h2>Check Status of Past Events:</h2>

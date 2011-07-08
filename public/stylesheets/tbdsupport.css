@@ -142,8 +142,8 @@ table.about h2 {
 
 table.profile {
 	padding: 2px;
-	width: 91%;
-	height: 550px;
+	width: 93%;
+	height: 750px;
 	margin-right: auto;
 	margin-left: auto;
 	background-image: url('table_background2.png');
@@ -153,6 +153,7 @@ table.profile tr td {
 	width: 33%;
 	vertical-align: top;
 	padding: 8px;
+	border: thin solid black;
 }
 
 table.profile tr td img {
@@ -166,22 +167,23 @@ table.profile ul li {
 	list-style: none;
 }
 
-table.profile p {
+table.profile h2 {
 	margin-left: 10px;
 }
 
-table.profile h2 {
-	margin-left: 10px;
+table.profile h3 {
+	margin-left: 40px;
 }
 
 /* Edit User Page */
 
 div.edit_user {
-	width: 91%;
-	height: 550px;
+	width: 65%;
+	height: 600px;
 	padding: 2px;
-	margin-right: auto;
-	margin-left: auto;
+	margin-left: 200px;
+	margin-bottom: 50px;
+	border: thin solid black;
 }
 
 div.edit_user h2 {
