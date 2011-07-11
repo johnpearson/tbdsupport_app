@@ -9,7 +9,7 @@ body {
 }
 
 a {
-	color: #8B4513; 
+	color: black; 
 	text-decoration: none;
 }
 
@@ -18,7 +18,7 @@ a:hover {
 }
 
 a:visited {
-	color: #8B4513; 
+	color: #2F4F4F; 
 }
 
 h1 {
@@ -72,7 +72,7 @@ table.user_header ul li {
 /* Welcome Page */
 
 table.welcome {
-	padding: 2px;
+	padding: 3px;
 	width: 91%;
 	height: 550px;
 	margin-right: auto;
@@ -153,13 +153,12 @@ table.profile tr td {
 	width: 33%;
 	vertical-align: top;
 	padding: 8px;
-	border: thin solid black;
 }
 
 table.profile tr td img {
 	margin-top: 10px;
-	padding-left: 300px;
-	position: absolute;
+	padding-left: 35px;
+	border: none;
 }
 
 table.profile ul li {
@@ -206,7 +205,7 @@ div.links {
 	width: 27%;
 	margin-left: auto;
 	margin-right: auto;
-	border-bottom: thin solid #8B4513;
+	border-bottom: thin solid gray;
 }
 
 div.links ul li {
@@ -218,7 +217,8 @@ div.links ul li {
 /* Gravatar Styling */
 
 div.gravatar img {
-	vertical-align: top;
+	float: right;
+	padding-right: 150px;
 }
 
 /* Footer */

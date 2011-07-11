@@ -16,4 +16,8 @@ module ApplicationHelper
                                                     :class => 'gravatar',
                                                     :gravatar => options)
   end
+  
+  def new_button
+    new_button = image_tag("new_button.png", :alt => "create new event")
+  end
 end
