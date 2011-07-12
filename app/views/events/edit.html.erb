@@ -1,0 +1,38 @@
+<%= render 'shared/user_header' %>
+<div class="create_event round ">
+	<h2>Edit Event:</h2>
+	<table class="new_event">
+		<% form_for @event do |f| %>
+			<%= render 'shared/error_messages', :object => f.object %>
+			<tr>
+				<td>
+					<p><%= f.label :name %><br />
+					<%= f.text_field :name %></p>
+					<p><%= f.label "Event Details" %><br />
+					<%= f.text_area :content %></p>
+				</td>
+				<td>
+					<br /><br /><br />
+					<p><%= f.label "Computer Info" %><br />
+					<%= f.text_field :computer_info %></p>
+					<p><%= f.label "Type of OS(XP, Vista, Windows 7)" %><br />
+					<%= f.text_field :os_type %></p>
+					<p><%= f.label "Type of Antivirus" %><br />
+					<%= f.text_field :antivirus %></p>
+					<p><%= f.label "Contact Info (What is the best way to reach you?)" %><br />
+					<%= f.text_field :contact %></p>
+					<p><%= f.label "Availability (What is the best time to reach you?)" %><br />
+					<%= f.text_field :availablity %></p>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<div class="actions">
+						<%= f.submit "Edit Event" %>
+					</div>
+				</td>
+			</tr>
+		<% end %>
+	</table>
+</div>
+<%= render 'shared/bottom_links' %>

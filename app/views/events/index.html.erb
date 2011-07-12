@@ -1,0 +1,39 @@
+<%= render 'shared/user_header' %>
+<div class="create_event round" >
+	<% flash.each do |name, msg| %>
+		<%= content_tag :div, msg, :id => "flash_#{name}" %>
+	<% end %>
+	<table class="events">
+		<% @events.each do |event| %>
+			<tr>
+				<td>
+					<h2><%= event.name %>&nbsp;&nbsp;<i>Ticket id: &nbsp;<%= event.id %></i></h2>
+					<p>	<i>Created <%= (event.created_at.to_formatted_s(
+									:long_ordinal)).gsub! /\d\d\:\d\d/, '' %></i></p>
+					<ul>
+						<li><i><strong>Event Details: </strong>
+										<%= event.content %></i></li>
+						<li><i><strong>Computer Info: </strong>
+										<%= event.computer_info %></i></li>
+						<li><i><strong>Operating System: </strong>
+										<%= event.os_type %></i></li>
+						<li><i><strong>Antivirus: </strong>
+										<%= event.antivirus %></i></li>
+						<li><i><strong>Contact Info: </strong>
+										<%= event.contact %></i></li>
+						<li><i><strong>Availability: </strong>
+										<%= event.availablity %></i></li><br />
+						<% if user_signed_in? %>
+						<li><i><strong><%= link_to "Edit", "events/#{event.id}/edit" %></strong>
+							or&nbsp;<strong><%= link_to "Delete", event,
+												:method => :delete,
+												:confirm => "Are you sure?",
+												:title => "Delete #{event.name}"%></i></li><br />
+						<% end %>
+					</ul>
+				</td>
+			</tr>
+		<% end %>
+	</table>
+</div>
+<%= render 'shared/bottom_links' %>

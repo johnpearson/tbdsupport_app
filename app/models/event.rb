@@ -1,6 +1,6 @@
 class Event < ActiveRecord::Base
-  attr_accessible :name, :content, :availability, :contact, :computer_info, 
-                  :os_type, :antivirus, 
+  attr_accessible :name, :content, :availablity, :contact, :computer_info, 
+                  :os_type, :antivirus 
   
   # Events belong to a user
   belongs_to :user

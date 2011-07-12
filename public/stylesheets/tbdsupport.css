@@ -41,7 +41,7 @@ table.header {
 }
 
 table.header tr td {
-	padding: 8px;
+	padding-right: 25px;
 }
 
 table.header ul li {
@@ -57,37 +57,37 @@ table.user_header {
 }
 
 table.user_header tr td {
-	padding-top: 8px;
-	padding-left: 8px;
+	padding-top: 3px;
+	padding-left: 3px;
 	padding-right: 35px;
 	margin-right: 150px;
 }
 
 table.user_header ul li {
+	margin-top: 10px;
 	list-style: none;
 	display: inline;
-	padding: 8px;
+	padding: 5px;
 }
 
 /* Welcome Page */
 
 table.welcome {
 	padding: 3px;
-	width: 91%;
+	width: 92%;
 	height: 550px;
-	margin-right: auto;
-	margin-left: auto;
+	margin-left: 50px;
 	background-image: url('table_background3.png');
 }
 
 table.welcome tr td {
 	width: 33%;
 	vertical-align: top;
-	padding: 8px;
+	padding: 10px;
 }
 
 table.welcome tr td img {
-	margin-top: 10px;
+	margin-top: 8px;
 	padding-left: 260px;
 	position: absolute;
 }
@@ -143,7 +143,7 @@ table.about h2 {
 table.profile {
 	padding: 2px;
 	width: 93%;
-	height: 750px;
+	height: 690px;
 	margin-right: auto;
 	margin-left: auto;
 	background-image: url('table_background2.png');
@@ -156,7 +156,7 @@ table.profile tr td {
 }
 
 table.profile tr td img {
-	margin-top: 10px;
+	margin-top: 20px;
 	padding-left: 35px;
 	border: none;
 }
@@ -174,6 +174,10 @@ table.profile h3 {
 	margin-left: 40px;
 }
 
+table.profile p {
+	padding-left: 35px;
+}
+
 /* Edit User Page */
 
 div.edit_user {
@@ -183,6 +187,7 @@ div.edit_user {
 	margin-left: 200px;
 	margin-bottom: 50px;
 	border: thin solid black;
+	background: #FDF5E6;
 }
 
 div.edit_user h2 {
@@ -196,6 +201,53 @@ div.edit_user p {
 
 div.edit_user a {
 	padding-left: 5px;
+}
+
+/* Create New Event Page */
+
+div.create_event {
+	padding: 2px;
+	width: 93%;
+	height: 690px;
+	margin-right: auto;
+	margin-left: auto;
+	background-image: url('table_background2.png');	
+}
+
+table.new_event {
+	padding: 10px;
+}
+
+table.new_event tr td {
+	width: 33%;
+	vertical-align: top;
+	padding-top: 8px;
+	padding-left: 10px;
+}
+
+div.create_event h2 {
+	margin-left: 20px;
+}
+
+/* Events Index Page */
+
+table.events {
+	padding: 10px;
+	width: 95%;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+table.events ul li {
+	list-style: none;
+}
+
+table.events p {
+	padding-left: 20px;
+}
+
+table.events h2 {
+	text-decoration: underline;
 }
 
 /* Bottom Links */
@@ -220,6 +272,89 @@ div.gravatar img {
 	float: right;
 	padding-right: 150px;
 }
+
+/* Form, Error Messages, and Flash Messages */
+
+#flash_alert {
+	padding-left: 1em;
+	width: 35%;
+	font-size: 150%;
+	background: #FF6347;
+}
+
+#flash_notice {
+	margin-left: 1em;
+	margin-top: 2em;
+	padding-left: 1em;
+	padding-top: .25em;
+	padding-bottom: .25em;
+	width: 60%;
+	font-size: 100%;
+	background: #FDF5E6;
+}
+
+#flash_success {
+	padding-left: 1em;
+	padding-top: .25em;
+	padding-bottom: .25em;
+	width: 35%;
+	font-size: 125%;
+	background: #FDF5E6;
+	
+}
+
+.field_with_errors {
+	margin-left: 10px;
+	margin-top: 10px;
+	padding: 2px;
+	background-color: red;
+	display: table;
+}
+
+.field_with_errors label {
+	color: #fff;
+}
+
+#error_explanation {
+	width: 400px;
+	border: 2px solid red;
+	padding: 7px;
+	padding-bottom: 12px;
+	margin-left: 10px;
+	margin-bottom: 20px;
+	background-color: #f0f0f0;
+}
+
+#error_explanation h2 {
+	text-align: left;
+	font-weight: bold;
+	padding: 5px 5px 5px 15px;
+	font-size: 12px;
+	margin: -7px;
+	background-color: #c00;
+	color: #fff;
+}
+
+#error_explanation p {
+	color: #333;
+	margin-bottom: 0;
+	padding: 5px;
+}
+
+#error_explanation ul li {
+	padding-top: 10px;
+	font-size: 12px;
+	list-style: none;
+	padding-left: 1em;
+}
+
+/* Submit Button Actions */
+
+div.actions {
+	padding-top: 10px;
+	padding-left: 10px;
+}
+
 
 /* Footer */
 
