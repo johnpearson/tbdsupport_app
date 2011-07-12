@@ -167,7 +167,7 @@ table.profile ul li {
 }
 
 table.profile h2 {
-	margin-left: 10px;
+	margin-left: 25px;
 }
 
 table.profile h3 {
@@ -215,18 +215,17 @@ div.create_event {
 }
 
 table.new_event {
-	padding: 10px;
+	padding: 20px;
 }
 
 table.new_event tr td {
 	width: 33%;
 	vertical-align: top;
-	padding-top: 8px;
 	padding-left: 10px;
 }
 
 div.create_event h2 {
-	margin-left: 20px;
+	margin-left: 25px;
 }
 
 /* Events Index Page */
