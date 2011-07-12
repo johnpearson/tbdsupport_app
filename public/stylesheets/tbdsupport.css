@@ -9,7 +9,7 @@ body {
 }
 
 a {
-	color: black; 
+	color: #8B4513; 
 	text-decoration: none;
 }
 
@@ -18,7 +18,7 @@ a:hover {
 }
 
 a:visited {
-	color: #2F4F4F; 
+	color: #8B4513; 
 }
 
 h1 {
