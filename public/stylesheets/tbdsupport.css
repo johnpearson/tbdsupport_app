@@ -141,8 +141,8 @@ table.about h2 {
 
 table.profile {
 	padding: 2px;
-	width: 93%;
-	height: 690px;
+	width: 94%;
+	height: 725px;
 	margin-right: auto;
 	margin-left: auto;
 	background-image: url('table_background2.png');
@@ -181,7 +181,7 @@ table.profile p {
 
 div.edit_user {
 	width: 65%;
-	height: 600px;
+	height: 825px;
 	padding: 2px;
 	margin-left: 200px;
 	margin-bottom: 50px;
@@ -207,7 +207,7 @@ div.edit_user a {
 div.create_event {
 	padding: 2px;
 	width: 93%;
-	height: 690px;
+	height: 720px;
 	margin-right: auto;
 	margin-left: auto;
 	background-image: url('table_background2.png');	
@@ -352,10 +352,17 @@ div.gravatar img {
 	padding-left: 1em;
 }
 
+/* Pagination Styling */
+
+div.pagination {
+	padding-top: 10px;
+	padding-left: 20px;
+}
+
 /* Submit Button Actions */
 
 div.actions {
-	padding-top: 10px;
+	padding-top: 15px;
 	padding-left: 10px;
 }
 
