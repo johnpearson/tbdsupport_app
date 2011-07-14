@@ -5,17 +5,19 @@
 				<div class="gravatar"><%= gravatar_for @user, :size => 75 %></div>
 				<h2>User Profile:</h2>
 					<ul>
-						<li><b>Name:</b>  <%= current_user.name %></li>
-						<li><b>Email:</b>  <%= current_user.email %></li>
+						<li><b>Name:</b>  <%= @user.name %></li>
+						<li><b>Email:</b>  <%= @user.email %></li>
 						<li><b>Last Signed In:</b>  
 						  <%= (@user.last_sign_in_at.to_formatted_s(
 						:long_ordinal)).gsub! /\d\d\:\d\d/, '' %></b>
+						<% unless @event.nil? %>
 						<li><b>Last Event:</b>  <%= @event.name %></li>
 						<li><b>Date of Last Event:</b>  <%= (@event.created_at.to_formatted_s(
 						:long_ordinal)).gsub! /\d\d\:\d\d/, '' %></li>
-						<li><b>Computers:</b>  <%= current_user.computers %></li>
-						<li><b>Other devices:</b>  <%= current_user.devices %></li>
-						<li><b>Company Name:</b>  <%= current_user.company %></li>
+						<% end %>
+						<li><b>Computers:</b>  <%= @user.computers %></li>
+						<li><b>Other devices:</b>  <%= @user.devices %></li>
+						<li><b>Company Name:</b>  <%= @user.company %></li>
 					</ul><br />
 				<div class="create_link">
 					<%= link_to new_button, new_event_path %>

@@ -296,11 +296,13 @@ div.gravatar img {
 }
 
 #flash_success {
+	margin-left: 1em;
+	margin-top: 2em;
 	padding-left: 1em;
 	padding-top: .25em;
 	padding-bottom: .25em;
 	width: 35%;
-	font-size: 125%;
+	font-size: 100%;
 	background: #FDF5E6;
 	
 }
