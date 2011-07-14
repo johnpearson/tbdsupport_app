@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+	</head>
+	<body>
+		<h2>An Event has been created by <%= @user.name %>, here are the details:</h2>
+			<ul>
+				<li><%= @event.name %></li>
+				<li><%= @event.content %></li>
+				<li><%= @event.computer_info %></li>
+				<li><%= @event.os_type %></li>
+				<li><%= @event.antivirus %></li>
+				<li><%= @event.contact %></li>
+				<li><%= @event.availablity %></li><br />
+				<li><%= @event.id %></li>
+			</ul>
+	</body>
+</html>
