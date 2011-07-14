@@ -10,8 +10,11 @@ class EventsController < ApplicationController
   # Creates event in database and offers successful flash notice if saved 
   # otherwise it redirects back to the new event page
   def create
+    @user = current_user
     @event = current_user.events.build(params[:event])
     if @event.save
+      # EventMailer configuration to send email of event data to technicans
+      EventMailer.event_email(@event).deliver
       flash[:notice] = "Event Created! A Technician will contact you soon."
       redirect_to events_path
     else
