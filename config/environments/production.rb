@@ -46,4 +46,14 @@ TbdsupportApp::Application.configure do
 
   # Send deprecation notices to registered listeners
   config.active_support.deprecation = :notify
+  
+  # Configuration settings to send mail from the app through support@techbydsn.com
+  config.action_mailer.delivery_method = :smtp
+  config.action_mailer.smtp_settings = {
+    :address          => "smtp.accountsupport.com",
+    :port             => "25",
+    :authentication   => "plain",
+    :user_name        => "support@techbydsn.com",
+    :password         => "techbydsn"
+  }
 end
