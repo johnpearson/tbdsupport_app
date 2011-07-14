@@ -1,14 +1,14 @@
 development:
-    :address: smtp.accountsupport.com
-    :port: 25
+    :address: smtp.gmail.com
+    :port: 587
     :authentication: plain
-    :user_name: support@techbydsn.com
-    :password: techbydsn
+    :user_name: jpearson556@gmail.com
+    :password: C12D3477
     :enable_starttls_auto: true
 Production:
-    :address: smtp.accountsupport.com
-    :port: 25
+    :address: smtp.gmail.com
+    :port: 587
     :authentication: plain
-    :user_name: support@accountsupport.com
-    :password: techbydsn
+    :user_name: jpearson556@gmail.com
+    :password: C12D3477
     :enable_starttls_auto: true

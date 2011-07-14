@@ -1,5 +1,5 @@
 class EventMailer < ActionMailer::Base
-  default :from => "support@techbydsn.com"
+  default :from => "jpearson556@gmail.com"
   
   def event_email(user, event)
     @user = user
