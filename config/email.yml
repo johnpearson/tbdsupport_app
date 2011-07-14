@@ -1,0 +1,14 @@
+development:
+    :address: smtp.accountsupport.com
+    :port: 25
+    :authentication: plain
+    :user_name: support@techbydsn.com
+    :password: techbydsn
+    :enable_starttls_auto: true
+Production:
+    :address: smtp.accountsupport.com
+    :port: 25
+    :authentication: plain
+    :user_name: support@accountsupport.com
+    :password: techbydsn
+    :enable_starttls_auto: true

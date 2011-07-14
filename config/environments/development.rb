@@ -15,7 +15,21 @@ TbdsupportApp::Application.configure do
   config.action_controller.perform_caching = false
 
   # Don't care if the mailer can't send
-  config.action_mailer.raise_delivery_errors = false
+  config.action_mailer.raise_delivery_errors = true
+  
+  # Set mailer to deliver 
+  config.action_mailer.perform_deliveries = true
+  
+  # Configuration settings to send mail from the app through jpearson556@gmail.com
+  #config.action_mailer.delivery_method = :smtp
+  #config.action_mailer.smtp_settings = {
+    #:address              => "smtp.accountsupport.com",
+    #:port                 => "25",
+    #:authentication       => "plain",
+    #:user_name            => "support@techbydsn.com",
+    #:password             => "techbydsn",
+    #:enable_starttls_auto => true
+  #}
 
   # Print deprecation notices to the Rails logger
   config.active_support.deprecation = :log
