@@ -10,7 +10,9 @@
 						<li><b>Last Signed In:</b>  
 						  <%= (@user.last_sign_in_at.to_formatted_s(
 						:long_ordinal)).gsub! /\d\d\:\d\d/, '' %></b>
-						<li><b>Last Event:</b></li>
+						<li><b>Last Event:</b>  <%= @event.name %></li>
+						<li><b>Date of Last Event:</b>  <%= (@event.created_at.to_formatted_s(
+						:long_ordinal)).gsub! /\d\d\:\d\d/, '' %></li>
 						<li><b>Computers:</b>  <%= current_user.computers %></li>
 						<li><b>Other devices:</b>  <%= current_user.devices %></li>
 						<li><b>Company Name:</b>  <%= current_user.company %></li>

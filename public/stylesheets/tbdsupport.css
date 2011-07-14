@@ -83,17 +83,17 @@ table.welcome {
 table.welcome tr td {
 	width: 33%;
 	vertical-align: top;
-	padding: 10px;
+	padding: 10px 30px 10px 10px;
 }
 
 table.welcome tr td img {
-	margin-top: 8px;
+	margin-top: 15px;
 	padding-left: 260px;
 	position: absolute;
 }
 
 table.welcome ul li {
-	padding: 5px;
+	padding: 3px;
 }
 
 table.welcome p {
@@ -107,23 +107,22 @@ table.welcome h2 {
 /* About Page */
 
 table.about {
-	padding: 2px;
-	width: 90%;
+	padding: 3px;
+	width: 92%;
 	height: 550px;
-	margin-right: auto;
-	margin-left: auto; 
+	margin-left: 50px; 
 	background-image: url('table_background3.png');
 }
 
 table.about tr td {
 	width: 33%;
 	vertical-align: top;
-	padding: 8px;
+	padding: 15px 30px 15px 15px;
 }
 
 table.about tr td img {
 	margin-top: 10px;
-	padding-left: 60px;
+	padding-left: 40px;
 }
 
 table.about ul li {
@@ -235,6 +234,10 @@ table.events {
 	width: 95%;
 	margin-right: auto;
 	margin-left: auto;
+}
+
+table.events tr td {
+	border-bottom: 2px dotted #8B4513;
 }
 
 table.events ul li {
