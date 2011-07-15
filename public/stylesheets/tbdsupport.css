@@ -11,6 +11,7 @@ body {
 a {
 	color: #8B4513; 
 	text-decoration: none;
+	font-weight: bold;
 }
 
 a:hover {
@@ -47,7 +48,6 @@ table.header tr td {
 table.header ul li {
 	list-style: none;
 	display: inline;
-	padding: 8px;
 }
 
 /* User Header */
@@ -67,7 +67,6 @@ table.user_header ul li {
 	margin-top: 10px;
 	list-style: none;
 	display: inline;
-	padding: 5px;
 }
 
 /* Welcome Page */
@@ -255,8 +254,8 @@ table.events h2 {
 /* Bottom Links */
 
 div.links {
-	padding: 2px;
-	width: 27%;
+	padding: 2px 2px 2px 35px;
+	width: 30%;
 	margin-left: auto;
 	margin-right: auto;
 	border-bottom: thin solid gray;
@@ -265,7 +264,6 @@ div.links {
 div.links ul li {
 	list-style: none;
 	display: inline;
-	padding: 8px;
 }
 
 /* Gravatar Styling */

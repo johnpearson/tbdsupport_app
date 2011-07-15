@@ -9,13 +9,13 @@
 			</td>
 			<td>
 				<ul>
-					<li><%= link_to "User Profile", '/user' %></li>
+					<li><%= link_to "User Profile", '/user' %>&nbsp;|&nbsp;</li>
 					<li><%= link_to "Sign Out", destroy_user_session_path, 
-					 		:method => :delete %></li>
+					 		:method => :delete %>&nbsp;|&nbsp;</li>
 					<li><%= link_to "Edit Profile", 
-									edit_user_registration_path %></li>
-					<li><%= link_to "Create Event", new_event_path %></li>
-					<li><%= link_to "View Events", events_path %></li>
+									edit_user_registration_path %>&nbsp;|&nbsp;</li>
+					<li><%= link_to "Create Event", new_event_path %>&nbsp;|&nbsp;</li>
+					<li><%= link_to "View Events", events_path %>&nbsp;|&nbsp;</li>
 					<li><%= link_to "Contact Us", "/contact" %></li>
 				</ul>
 			</td>
