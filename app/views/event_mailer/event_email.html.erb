@@ -4,7 +4,8 @@
 		<meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
 	</head>
 	<body>
-		<h2>An Event has been created by <%= @user.name %>, here are the details:</h2>
+		<p><b><i>An Event has been created by <%= @user.name %>, 
+			here are the details:</i></b></p>
 			<p><b><i>Event Name:  </i></b><%= @event.name %></p>
 			<p><b><i>Event Details:  </i></b><%= @event.content %></p>
 			<p><b><i>Computer Info:  </i></b><%= @event.computer_info %></p>
@@ -12,6 +13,6 @@
 			<p><b><i>Antivirus:  </i></b><%= @event.antivirus %></p>
 			<p><b><i>Contact Info:  </i></b><%= @event.contact %></p>
 			<p><b><i>Availability:  </i></b><%= @event.availablity %></p>
-			<p><b><i>Event Id:  </i></b><%= @event.id %></p>
+			<p><b><i>Ticket Id:  </i></b><%= @event.id %></p>
 	</body>
 </html>

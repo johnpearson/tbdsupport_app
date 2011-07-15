@@ -4,6 +4,6 @@ class EventMailer < ActionMailer::Base
   def event_email(user, event)
     @user = user
     @event = event
-    mail(:to => "jpearson@techbydsn.com", :subject => "Event Created by #{@user.name}" )
+    mail(:to => ["jpearson@techbydsn.com", "klutton@techbydsn.com"], :subject => "Event Created by #{@user.name}" )
   end
 end
