@@ -1,0 +1,21 @@
+<header>
+	<table class="user_header">
+		<tr>
+			<td>
+				<%= image_tag('LOGO_small.jpg', :alt => 'logo') %>
+			</td>
+			<td>
+				<h1>Welcome, <%= current_technician.email %></h1>
+			</td>
+			<td>
+				<ul>
+					<li><%= link_to "Sign Out", destroy_user_session_path, 
+					 		:method => :delete %>&nbsp;|&nbsp;</li>
+					<li><%= link_to "Create Notes", "#" %>&nbsp;|&nbsp;</li>
+					<li><%= link_to "Contact User", "#" %>&nbsp;|&nbsp;</li>
+					<li><%= link_to "Contact Us", "/contact" %></li>
+				</ul>
+			</td>
+		</tr>
+	</table>
+</header>

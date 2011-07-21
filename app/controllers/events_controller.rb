@@ -14,7 +14,7 @@ class EventsController < ApplicationController
     @event = current_user.events.build(params[:event])
     if @event.save
       # EventMailer configuration to send email of event data to technicans
-      EventMailer.event_email(@user, @event).deliver
+      #EventMailer.event_email(@user, @event).deliver
       flash[:notice] = "Event Created! A Technician will contact you soon."
       redirect_to events_path
     else

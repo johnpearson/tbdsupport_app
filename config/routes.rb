@@ -11,6 +11,7 @@ TbdsupportApp::Application.routes.draw do
   match '/service' => 'pages#service'
   match '/contact' => 'pages#contact'
   match '/user' => "users#show", :as => :user_root
+  match '/technician' => "technicians#show", :as => :technician_root
 
   root :to => 'pages#home'
 end
